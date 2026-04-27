@@ -1,0 +1,13 @@
+{
+  "name": "Test User",
+  "dob": "1990-01-01",
+  "nicNumber": "TESTNIC999",
+  "mobiles": ["0771234567"],
+  "addresses": [
+    {
+      "addressLine1": "Line 1",
+      "cityId": 4
+    }
+  ],
+  "familyMemberIds": []
+}
