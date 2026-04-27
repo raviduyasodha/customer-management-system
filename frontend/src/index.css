@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary-color: #1677ff;
+  --bg-light: #f5f7fa;
+  --bg-dark: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container Transitions */
+.app-container {
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-container.light {
+  background-color: var(--bg-light);
+  color: #1f1f1f;
+}
+
+.app-container.dark {
+  background-color: var(--bg-dark);
+  color: #ffffff;
+}
+
+/* Professional Card Styling */
+.neon-card {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+.dark .neon-card {
+  background: #141414 !important;
+  border: 1px solid #303030 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+}
+
+.light .neon-card {
+  background: #ffffff !important;
+  border: 1px solid #f0f0f0 !important;
+}
+
+/* Address Box */
+.address-box {
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dark .address-box {
+  border: 1px solid #303030;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.light .address-box {
+  border: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: 600 !important;
+  margin-bottom: 16px !important;
+}
+
+.dark h1, .dark h2, .dark h3 {
+  color: #ffffff !important;
+}
+
+.light h1, .light h2, .light h3 {
+  color: #000000 !important;
+}
+
+.ant-divider-inner-text {
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #303030;
+  border-radius: 4px;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 4px;
+}
